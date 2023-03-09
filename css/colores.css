@@ -1,0 +1,65 @@
+
+.box-colors {
+    display: flex;
+    flex-direction: row;
+
+}
+.box-style{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: black;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.box-1{ background-color: pink;
+
+
+}
+.box-2{
+background-color:blue;
+
+}
+
+.box-3{
+    background-color: green;
+    
+
+}
+.box-4{
+    background-color: rgb(142, 68, 173 );
+  
+
+}
+.box-5{
+    background-color: rgb(189, 26, 26);
+   
+
+}
+.box-6{
+background-color:rgb(248, 149, 161);
+
+
+}
+.box-7{
+    background-color: #F1C40F;
+   
+
+}
+.box-8{
+background-color: #99CC00;
+
+}
+.box-9{
+background-color: #717D7E ;
+
+
+}

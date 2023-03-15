@@ -1,0 +1,41 @@
+
+h1{
+    text-align: center;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-style{
+    width: 300px;
+    height: 580px;
+    margin: 20px;
+display: inline-block;
+padding: 15px 30px;
+text-align: justify;
+font-size: 1.3em;
+letter-spacing: 0;
+word-spacing: 0;
+line-height: 1.4em;
+}
+
+.box-1{
+
+border: 3px solid rgb(64, 64, 64.9);
+}
+/*border dashed*/
+.box-2{
+
+border: 3px dashed rgb(97, 7, 97);
+}
+/*border dotted*/
+.box-3{
+border: 3px dotted rgb(59, 85, 188);
+
+}
+/*border double*/
+.box-4{
+border: 6px double rgb(215, 212, 12)
+
+}

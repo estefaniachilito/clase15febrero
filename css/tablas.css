@@ -4,8 +4,7 @@ th, td{
     text-align: center;
 }
 table{
-    border-collapse: collapse;
-    
+    border-radius: 15%;
 }
 .table-box{
     display: flex;
@@ -19,4 +18,78 @@ table{
 } 
 *{
     font-family: tahoma, sans-serif;
+}
+.color-1{
+    background-color: darkcyan;
+    color: white;
+}
+.color-2{
+    background-color:rgb(12, 155, 76);
+    color: white;
+}
+.color-3{
+    background-color:rgb(66, 167, 255);
+    color: white;
+}
+.color-4{
+    background-color:rgb(255, 123, 0);
+    color: white;
+}
+.color-5{
+    background-color:rgb(85, 6, 98);
+    color: white;
+}
+.color-6{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-7{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-8{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-9{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-10{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-11{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-12{
+    background-color: darkcyan;
+    color: white;
+    
+}
+.color-13{
+    background-color: darkcyan;
+    color: white;
+}
+
+.color-14{
+    background-color: darkcyan;
+    color: white;
+}
+.c1{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+.borde1{
+    border-bottom-left-radius: 20%;
+}
+.borde2{
+    border-top-right-radius: 20%;
 }

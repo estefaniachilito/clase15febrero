@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="./css/formularios.css">
+</head>
+
+<body>
+        <div class="lol">
+            <fieldset class="login">
+            <h2 class="pop">Inicio de sesion</h2>
+            
+            <form>
+                <div class="lol">
+                    <label>Correo</label>
+                    <input type="text">
+                </div>
+                <div class="lol">
+                    <label>Ingrese el tipo de documento</label>
+                    <select name="Tipo de documento" id="">
+                        <option value="C.C">Cedula de ciudadania</option>
+                        <option value="T.I">Tarjeta de identidad</option>
+                        <option value="R.G">Registro civil</option>
+                        <option value="C.E">Cedula extrangera</option>
+                    </select>
+                </div>
+
+                <div class="lol">
+                    <label>Por favor seleccione la clase</label>
+                    <input type="radio" name="clase-vuelo">Primer clase <br>
+                    <input type="radio" name="clase-vuelo">Business class <br>
+                    <input type="radio" name="clase-vuelo">Clase turistica <br>
+                </div>
+
+                <div class="lol">
+                    <label>seleccione un dia para visualizar los vuelos disponibles</label>
+                    <input type="checkbox" name="disponibilidad" value="2023-04-19">Miercoles 19 de abril de 2023 <br>
+                    <input type="checkbox" name="disponibilidad" value="2023-04-20">Jueves 20 de abril de 2023br <br>
+                    <input type="checkbox" name="disponibilidad" value="2023-04-21">Viernes 21 de abril de 2023 <br>
+                    <input type="checkbox" name="disponibilidad" value="2023-04-22">Sabado 22 de abril de 2023 <br>
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input type="number">
+                </div>
+                <input type="buttom" value="enviar">
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

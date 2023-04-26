@@ -1,3 +1,9 @@
 body{
     background: url(../IMG/fodoindex.jpg);
 }
+li{
+    color: blue;
+}
+.box1{
+color: blue;
+}

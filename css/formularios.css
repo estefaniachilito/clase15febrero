@@ -66,4 +66,5 @@ input[type="button"] {
     justify-content: center;
     display: flex;
     background-color: rgb(97, 160, 197);
+    color: white;
 }

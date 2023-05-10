@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
+  h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    justify-content: center;
+    justify-items: center;
+  }
+    .container {
+      background-color: rgb(252, 252, 252);
+      width: 85%;
+  }
+  #nav-bar-horizontal{
+      position: fixed;
+  }
+  .main-menu{
+      list-style: none;
+      position: fixed;
+      height: 0vh;
+      text-align: center;
+      transition: all 0.5s;
+  }
+  .item-horizontal{
+      display: none;
+      padding: 3px 5px;
+      border-right: 1px solid rgb(25, 156, 42);
+      background-color: rgb(232, 232, 232);
+      border-radius: 0;
+      font-weight: 400;
+      font-size: 0.8em;
+      cursor: pointer;
+      line-height: 30px;
+      transform: all 0.5s;
+
+  }
+  .item-horizontal:hover{
+      background: rgb(210, 210, 210);
+  }
+  .enlace-item-horizontal{
+      text-decoration: none;
+      color: rgb(214, 214, 214);
+     color: black;
+  }
+  .bar-btn{
+      font-size: 23px;
+      margin-top: 8px;
+      margin-left: 8px;
+      cursor: pointer;
+  }
+  #check{
+      display: none;
+  }
+  #check:checked ~ .main-menu {
+      height: 100vh;
+  }
+  #check:checked ~ .main-menu .item-horizontal {
+      display: block;
+  }
+  #nav-bar-vertical{
+      display: inline-block;
+  }
+  .item-vertical{
+      list-style: none;
+      padding: 20px;
+      margin: 5px;
+      background-color: rgb(87, 87, 87);
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.8em;
+      width: 300px;
+      cursor: pointer;
+  }
+  .item-vertical:hover{
+      background-color: rgb(87, 87, 87);
+  }
+  .enlace-item-vertical{
+      text-decoration: none;
+      color: white;
+  }
+  @media (min-width:768px) {}
+      .bar-btn{
+          display: none;
+      }
+      #nav-bar-horizontal{
+          height: 100px;
+          margin: 0;
+      }
+      .main-menu {
+          position: fixed;
+          height: 100px;
+          top: 0;
+          background: none;
+          transition: none;
+      }
+      .main-menu .item-horizontal {
+          display: inline-block;
+          float: left;
+          transition: none;
+      }
+      .main-menu .item-horizontal .enlace-item-horizontal{
+          font-size: 18px;
+      }
+      .container {
+          max-width: 90%;
+          margin: 0 auto;
+      }
+      .nav-bar-vertical{
+          margin-top: 105px;
+      }

@@ -1,9 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body{
     background: url(../IMG/fodoindex.jpg);
 }
 li{
-    color: blue;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
+
 .box1{
-color: blue;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 3em;
 }

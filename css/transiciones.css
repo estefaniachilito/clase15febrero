@@ -1,0 +1,14 @@
+.box1{
+    width: 400px;
+    height: 700px;
+    border-radius: 25px;
+    background-color: goldenrod;
+    transition: all 1s;
+    position: fixed;
+    left: -300px;
+}
+.box1:hover{
+    background-color: goldenrod;
+    left: 0;
+    cursor: pointer;
+}

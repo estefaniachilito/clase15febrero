@@ -1,17 +1,48 @@
+
 *{
-    margin: 0%;
-    padding: 0%;
+    border: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
 }
-body{
-    background: url(../IMG/fodoindex.jpg);
-}
-li{
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
+body {
+    background-color: #5DADE2;
+    font-family: "Poppins", sans-serif;
+  }
+
 
 .box1{
     text-align: center;
     color: rgb(0, 0, 0);
     margin: 3em;
 }
+.box2{
+   /*color: rgb(255, 0, 0); 
+   text-align: center;
+   margin-top: 1em;
+
+   cursor: pointer;
+   border-radius: 8px;
+   width: 90%;
+   border: 0;
+   justify-content: center;
+   display: flex;
+   background-color:#1A5276 ;
+   color: white;*/
+
+   list-style: none; /*Para quitar el boton de inicio en los link*/
+   display: inline-block; /*  */
+   padding: 10px 20px; /* tamaño de la margen del boton */
+   font-size: 14px; /*Se establece el tamaño de la fuente*/
+   cursor: pointer; /*  */
+   text-align: center; /*  */
+   text-decoration: none; /*  */
+   outline: none; /*  */
+   border: 2px solid #154360; /*Se le hace un color de borde dependiendo de los siguientes datos, ej {2px solid red) se utilizaria sin las comillas*/
+   background-color: #154360;
+    border-radius: 15px;/*Cambia las esquinas rodondeandolo*/
+   margin-right: 15px; /*separar los botones*/
+
+   
+    margin: 20px
+}
+

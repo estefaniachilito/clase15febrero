@@ -16,19 +16,6 @@ body {
     margin: 3em;
 }
 .box2{
-   /*color: rgb(255, 0, 0); 
-   text-align: center;
-   margin-top: 1em;
-
-   cursor: pointer;
-   border-radius: 8px;
-   width: 90%;
-   border: 0;
-   justify-content: center;
-   display: flex;
-   background-color:#1A5276 ;
-   color: white;*/
-
    list-style: none; /*Para quitar el boton de inicio en los link*/
    display: inline-block; /*  */
    padding: 10px 20px; /* tamaño de la margen del boton */
@@ -41,8 +28,5 @@ body {
    background-color: #154360;
     border-radius: 15px;/*Cambia las esquinas rodondeandolo*/
    margin-right: 15px; /*separar los botones*/
-
-   
     margin: 20px
 }
-

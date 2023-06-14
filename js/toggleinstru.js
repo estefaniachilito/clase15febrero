@@ -1,23 +1,19 @@
-/*1. asociemos el id del toggle-box*/
+/* 1. Asocimos el id del toglee-box(contenedor1 ) */
+let contenedorPrincipal = document.getElementById("contenedorPrincipal");
+let contenedorScundario = document.getElementById("contenedorScundario");
 
-
-let toggleBox =document.getElementById("toggleBox");
-let choiceBox =document. getElementById("choiceBox");
-
-/*2. verificamos que clase se encuentra en choice-box*/
-toggleBox. addEventListener("click", function()){
-if (choiceBox.classList. contains("choiceBox")){
-    choiceBox.classList.add("choice-box-on");
-    choiceBox.classList.remove("choice-box-off");
-    toggleBox.classList.add ("toggle-box-on");
-    toggleBox. classList.remove ("toggle-box-off");
-}else{
-choiceBox.classList.add("choice-box-off");
-    choiceBox.classList.remove("choice-box-on");
-    toggleBox.classList.add ("toggle-box-off");
-    toggleBox. classList.remove ("toggle-box-on")
-}
-
-}
-/*2.1 al dar click quitamos la clase por defecto de choice-box y 
-agregamos la clase que venia con el hover de choice-box*/
+/* 2. Verificamos que clase se encuentra en chice-box (contenedor 2) */
+contenedorPrincipal.addEventListener("click", function() {
+    if (contenedorScundario.classList.contains("contenedor2-off")) {
+        contenedorScundario.classList.add("contenedor2-on")
+        contenedorScundario.classList.remove("contenedor2-off")
+        contenedorPrincipal.classList.add("contenedor1-on")
+        contenedorPrincipal.classList.remove("contenedor1-off")
+    }
+    else {
+        contenedorScundario.classList.remove("contenedor2-on")
+        contenedorScundario.classList.add("contenedor2-off")
+        contenedorPrincipal.classList.remove("contenedor1-on")
+        contenedorPrincipal.classList.add("contenedor1-off")
+    }
+});

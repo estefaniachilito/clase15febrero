@@ -1,0 +1,47 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    height: 70vh;
+    display: grid; 
+    align-content: center;
+    justify-content: center;
+    grid-template-columns:repeat(7,100px );
+    grid-template-rows:repeat(6,80px);
+    grid-gap : 20px 25px;
+}
+.contenedor .inicio {
+    grid-column-start: 3;
+}
+.box {
+    background-color: #d9b382;
+    border: 1px solid rgb(255, 255, 255);
+}
+.dia {
+    background-color:  #99A3A4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.festivo {
+    background-color: #99A3A4;
+    color: white;
+}
+.dom {
+    background-color: #d9b382;
+}
+
+span {
+    margin-top: 6%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: 300;
+}

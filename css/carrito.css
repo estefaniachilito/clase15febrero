@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    width: 35%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.306);
+    padding: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #FFD0C2;
+}
+
+.card > .total > p {
+    font-size: 25px;
+}
+
+.card > .pay {
+    width: 100%;
+    height: 60px;
+    background-color: #FF8674;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > .pay:hover {
+    background-color: #F9966B;
+}
+
+.card > .pay > p {
+    font-size: 20px;
+}
+
+/* .card > .pay:hover > p {
+    color: white;
+} */
+
+.card > .content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.card > .content > .img {
+    width: min-content;
+}
+
+.card > .content > .img > .interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card > .content > .img > .interaction button,
+.card > .content > .img > .interaction input {
+    height: 40px;
+    width: 50px;
+    background-color: #FFD0C2;
+
+}
+
+.card > .content > .img > .interaction input {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.card > .content > .img > .interaction button {
+    background-color: #FFD0C2;
+    border-radius: 10px;
+    font-size: 30px;
+
+}
+
+.card > .content > .resume {
+    width: 60%;
+}
+
+.card > .content > .resume > .book-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card > .content > .resume > .author {
+    font-size: 20px;
+}
+
+.card > .content > .resume > p {
+    margin-bottom: 20px;
+}
+
+.card > .content > .resume > .price {
+    font-size: 30px;
+}
+
+.card > .content > .resume > button {
+    padding: 13px;
+    background-color: #FFD0C2;
+    border-radius: 10px; 
+}

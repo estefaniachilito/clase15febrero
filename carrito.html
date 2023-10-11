@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <div class="card">
+        <div class="total">
+            <p>Subtotal cop: <span id="total">0</span></p>
+        </div>
+        <div class="pay">
+            <p>Proceder al pago (<span id="cant-product"></span>)</p>
+        </div>
+        <div class="content">
+            <div class="img">
+                <img src="img/libro.jpg" alt="">
+                <div class="interaction">
+                    <button id="btnDecrement">-</button>
+                    <input type="number" name="cantidad" id="cantidad" readonly value="0">
+                    <button id="btnIncrement">+</button>
+                </div>
+            </div>
+            <div class="resume">
+                <p class="book-title">La oscuridad de los colores</p>
+                <p class="author">Martin Blasco</p>
+                <p>Precio:</p>
+                <p class="price"><span id="precio">38000</span>cop</p>
+                <button id="eliminar">Eliminar</button>
+                <button>Guardar</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/carrito.js"></script>
+</html>

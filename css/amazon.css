@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgb(19, 25, 33);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    height: 42px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin-right: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+select{
+    background-color: rgba(212, 212, 212);
+    width: 60px;
+    height: 40px;
+    font-size: 13px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius:7px ;
+    color: rgba(0, 0, 0, 0.784);
+    border: 1px solid rgba(212, 212, 212);
+}
+select:hover{
+    background-color: rgba(212, 212, 212, 0.947);
+    color: black;
+    border: 1px solid rgba(212, 212, 212);
+    
+}
+.busqueda{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.lipa{
+    background-color: rgba(254, 189, 105);
+    width: 50px;
+    height: 40px;
+    font-size: 22px;
+    border-top-right-radius:7px ;
+    border-bottom-right-radius: 7px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(254, 189, 105);
+
+    
+    
+}
+button{
+    text-decoration: none;
+    
+    
+}
+.barra{
+    width: 1100px;
+    border-radius: 0;
+    border: 1px solid rgb(255, 255, 255);
+}

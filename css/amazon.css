@@ -1,82 +1,174 @@
-body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    margin: 0;
+*{
     padding: 0;
-}
-
-#navbar {
-    background-color: rgb(19, 16, 16);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5px;
-    height: 50px;
-}
-
-#navbar ul {
-    list-style: none;
-    padding: 10;
     margin: 0;
-    display: flex;
+    font-family: sans-serif;
 }
-
-#navbar li {
-    margin-right: 20px;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: #fff;
-}
-select{
-    background-color: rgb(225, 222, 222);
-    width: 72px;
-    height: 49px;
-    font-size: 15px;
-    border-bottom-left-radius: 7px;
-    border-top-left-radius:7px ;
-    color: rgba(53, 46, 46, 0.784);
-    border: 1px solid rgba(212, 212, 212);
-}
-select:hover{
-    background-color: rgba(212, 212, 212, 0.947);
-    color: black;
-    border: 1px solid rgba(212, 212, 212);
-    
-}
-.busqueda{
+header {
     display: flex;
     flex-direction: row;
-    
-    
+    background-color:#131921;
+    width: 100%;
+    height: 60px;
 }
-.lupa{
-    background-color: rgba(254, 189, 105);
-    width: 50px;
-    height: 49px;
-    font-size: 22px;
-    border-top-right-radius:7px ;
-    border-bottom-right-radius: 7px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgba(254, 189, 105);
+.barra {
+    width: 100%;
+    height: 39px;
+    background-color: #232f3e;
+}
+.icon,.letra {
+    color: white;
+}
+.logo {
+    background-image: url(../img/amazon2.png);
+    background-size: cover;
+    width: 130px;
+    height: 50px;
+}
+.ubicacion {
+    font-size: 0.8em;
+    justify-content: center;
+    width: 150px;
+    color: #CCCCCC;
+}
+.icono-ubicacion {
+    font-size: 20px;
+    float: left;
+    margin: 8px;
+    grid-area: icono-ubicacion;
+}
+.enviar {
+    margin-top: 10px;
+    grid-area: enviar;
+}
+.pais {
+    grid-area: pais;
+}/* contenedor donde esta lo de busqueda */
 
-    
-    
+.header-search-input-focus {
+    border: 1px solid #FEBD69; /* Cambia el color del borde al hacer clic */
+    background-color: #fcfcfc; /* Cambia el color de fondo al hacer clic */
 }
-button{
-    text-decoration: none;
-    
-    
+
+.header-search-input-no-focus {
+    border: 1px solid #E6E6E6; /* Cambia el color del borde cuando no se hace clic */
+    background-color: #FFFFFF; /* Cambia el color de fondo cuando no se hace clic */
 }
-.barra{
-    font-size: 18px;
-    width: 1000px;
-    height: 45px;
-    border-radius: 0;
-    border: 1px solid rgb(255, 255, 255);
+
+.content-busqueda {
+    width: calc(100% - 594px);
+    margin: 10px 0 ;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
 }
-.box-modal{
+select, .input_buscador,.icon-busqueda {
+    height: 100%;
+    border: none;
+}
+select {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 65px;
+    background-color: #E6E6E6;
+}
+.input_buscador {
+    outline: none;
+    width: calc(100% - 110px);
+}
+.icon-busqueda {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #FEBD69;
+    width: 45px;
+}
+.search {
+    font-size: 21px;
+}/* so far */
+
+.idioma {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 71.3px;
+}
+.bandera,.lengua {
+    padding-right: 3px;
+    padding-top: 28px;
+    width: 20px;
+    height: 14px;
+}
+.lengua {
+    color: white;
+}/* so far */
+.hola {
+    height: 60px;
+    width: 131px;
+}
+.saludo,.cuenta {
+    color: white;
+    font-size: 0.8em;
+}
+.saludo {
+    padding-top: 16px;
+    color: white;
+}/* so far */
+.reembolso {
+    height: 60px;
+    width: 77px;
+}
+.orden,.retornar{
+    color: white;
+    font-size: 0.8em;
+}
+.retornar {
+    padding-top: 16px;
+    color: white;
+}
+.carrito {
+    display: flex;
+    height: 60px;
+    width: 90px;
+}
+.i-carrito {
+    height: 30px;
+    width: 24px;
+    margin-top: 20px;
+}
+.l-carrito {
+    font-size: 0.8em;
+    margin-top: 26px;
+}/* so far  */
+.c-menu {
+    margin-left: 8px;
+    display: flex;
+    height: 35px;
+    width: 78px;
+}
+.i-hambu {
+    height: 17px;
+    width: 20px;
+    margin: 10px 0 0 10px;
+}
+.t-todo {
+    font-size: 0.8em;
+    margin-top: 10px;
+}/* so far  */
+
+.main-content {
+    height: 100vh;
+    position: static;
+    z-index: 10;
+}/* so far  */
+.ofert {
+    width: 140px;
+    height: 30px;
+}
+.t-oferta {
+    font-size: 0.8em;
+    margin-top: 10px;
+}/* so far  */
+
+.box-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -85,92 +177,77 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0,0, 0,.5);
     z-index: 10;
 }
-.modal{
-    width: 90%;
-    height: 90%;
+.modal {
+    width: 94%;
+    height: 75%;
     z-index: 20;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template: "box-main-img-modal info-modal" /
+                          1fr             350px;
 }
-/*  */
-
-
-
-
-/* la x */
 .btn-close {
     position: absolute;
     top: 5px;
     right: 10px;
-    font-size: 1.3em;
-    border: 3px solid rgb(44, 176, 224,0.3);
+    font-size: 1.4em;
+    border: 2px solid rgb(81, 185, 246,0.3);
     border-radius: 6px;
-    padding: 0 3px;
- }
- .box-main-img-modal{
-     grid-area: box-main-img-modal;
-     width: 100%;
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- .main-img-modal{
-     width: 40%;
-     height: auto;
- }
- .info-modal{
-     grid-area: info-modal;
-     padding: 20px 40px 20px 40px;
- 
- }
- 
- .txt-caracteristicas-modal {
-     
-     font-size: 1.2em;
-     text-align: justify;
-     line-height: 1.1em;
-     align-items: center;
- }
- /* cuadritos imagenes chiquitas */
- .contenedor {
-     position: absolute;
-     width: 3400px;
-     height: 1000px;
-     display: grid;
-     align-content: center;
-     justify-content: center;
-     /* border: 1px solid black; */
-     grid-template-columns: repeat(4, 90px);/* ancho */
-     grid-template-rows: repeat(6, 90px) ;  /* alto */    /* tambien funciona el codigo   repeat(4, 100 px) */ /* 1fr  =   1fraccion */
-     grid-gap: 10px 20px;
-     }
-     .contenedor .inicio {
-         grid-column-start: 1;
-         background-color: rgb(255, 255, 255) ;
-         display: flex;
-         justify-content: center;
-         align-content: center;
-         cursor: pointer;
-         border: 2px solid rgb(241, 208, 208)  ;
-       
-     }
-     .box {
-         padding: 3px;
-         background-color: rgb(170, 170, 170);
-     
-     }
-     .dia {
-         background-color: rgb(255, 255, 255) ;
-         display: flex;
-         justify-content: center;
-         align-content: center;
-         color: white;
-         cursor: pointer;
-         border: 2px solid rgb(241, 208, 208)  ;
-        
-     }
- 
+    padding: 1px 4px;
+    line-height: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+.box-main-img-modal {
+    grid-area: box-main-img-modal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-modal {
+    width: 50%;
+    height:auto;
+}
+.info-modal {
+    grid-template: info-modal;
+    padding: /* arriba */50px /*  derecha*/ 75px /* abajo */ 100px /* izquierda */ 20px ;
+}/* so far  */
+
+.divs {
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(2,70px);
+    position: absolute;
+    top: 180px;
+    right: 30px;
+    display: grid;
+    width: 300px;
+    height: 50px;
+}
+
+.divMiniaturas {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d5dbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divMiniaturas:hover {
+    cursor: pointer;
+    border: 2px solid #004b91;
+}
+.balon {
+    width: 41px;
+    height: 41px;
+}
+.selected {
+    border: 2px solid #ff8f00;
+  }
+  

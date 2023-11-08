@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon</title>
-  <link rel="stylesheet" href="css/amazon.css">
-  <link rel="stylesheet" href="icons/all.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="css/amazon.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="shortcut icon" href="./img/amazonL.jfif" type="image/x-icon">
 </head>
-
 <body>
-  <div id="navbar">
-    <h1><img src="img/amazon2.png" alt=""><a
-        href="https://www.google.com/maps/place/Colombia/@4.6365857,-79.6344677,6z/data=!3m1!4b1!4m6!3m5!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340!8m2!3d4.570868!4d-74.297333!16zL20vMDFsczI?entry=ttu"><img
-          src="img/amazon.png" alt=""></a>
-    </h1>
-    <div class="busqueda">
-      <select id="">
-        <option value="a">Todos</option>
-        <option value="s"></option>
-      </select>
-      <input type="text" class="barra" placeholder="Buscar Amazon ">
-      <button class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <header>
+        <!-- contenedor logo,icono ubicacion ,destino -->
+        <div class="logo "></div>
+        <div class="ubicacion">
+            <div class="icono-ubicacion"><i class="fa-solid fa-location-dot fa-beat"></i></div>
+            <div class="enviar">Enviar a</div>
+            <div class="pais"><b>Colombia</b></div>  
+        </div>
+        <!-- contenedor input , search,select -->
+        <div id="boxHeaderSearchInput" class="content-busqueda">
+            <select class="header-search-input" id="headerSearchInput"><option value="">Todos</option></select>
+            <input type="text" class="input_buscador" placeholder="Buscar Amazon">
+            <button class="icon-busqueda"><i class="search fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- contenedor Bandera , idioma,  -->
+        <div class="idioma">
+            <img class="bandera" src="./img/usa.png" alt="">
+            <div class="lengua"><b>ES</b></div>
+        </div>
+        <!-- contenedor saludo,cuenta  -->
+        <div class="hola">
+            <div class="saludo">Hola, identifícate</div>
+            <div class="cuenta"><b>Cuenta y listas</b></div>
+        </div>
+        <!-- contenedor textos devoluciones, pedidos  -->
+        <div class="reembolso">
+            <div class="retornar">Devoluciones</div>
+            <div class="orden"><b>Y pedidos</b></div>
+        </div>
+        <!-- contenedor icono carrito texto carrito  -->
+        <div class="carrito">
+            <div class="i-carrito"><i class="icon fa-solid fa-cart-shopping fa-beat"></i></div>
+            <div class=" letra l-carrito"><b>Carrito</b></div>
+        </div>
+    </header>
+    <div class="barra">
+        <div class="c-menu">
+          <div class="i-hambu"><i class="icon fa-solid fa-bars fa-fade"></i></div>
+          <div class="letra t-todo">Todo</div>
+       </div> 
+       <div class="ofert">
+        <div class="letra  t-oferta">oferta</div>
+       </div>
     </div>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Ofertas</a></li>
-      <li><a href="#">Prime</a></li>
-      <li><a href="#">
-          <div>
-            <span>0</span>
-            <span><i class="fa-solid fa-cart-shopping"></i></span>
-          </div>
-          <div>
-            <span>
-              Carrito
-            </span>
-          </div>
-      </li>
-    </ul>
-  </div>
+    <!-- cuerpo del trabajo -->
 
 
-  <div class="box-modal"> 
-    <div class="modal">
-        <div id="btnClose" class="btn-close">
-            <i class="style-btn2 fa-solid fa-x"></i> <!-- la x -->
-        </div>
-        <div class="box-main-img-modal">
-             <img class="main-img-modal" src="img/cama1.jpg" alt=""> <!-- imagen grandota -->
-        </div>
-        <div class="info-modal">
-            <span class="txt-caracteristicas-modal">
-              NapQueen - Colchón de espuma viscoelástica de 6.0 pulgadas, tamaño twin XL, tamaño mediano, firme, cama en una caja
-            </span>
-             <!-- cuadros imagenes chiquitas -->
-          
-        </div>
-        <div class="contenedor">
-
-          <div class="box dia"><img src="img/cama2.jpg" alt="i"></div>
-          <div class="box dia"><img src="img/cama3.jpg" alt=""></div>
-          <div class="box inicio"><img src="img/cama4.jpg" alt=""></div>
-          <div class="box dia"><img src="img/cama5.jpg.crdownload" alt=""></div>
-          <div class="box dia"><img src="img/cama6.jpg" alt=""></div>
-
-           </div>
-        
-        </div>
-
-
-  <script src="javascript/amazon.js"></script>
-
-
+    <!-- aqui comienza el modal -->
+  <div id="main-content" class="main-content"></div> 
+        <div class="box-modal">
+            <div class="modal">
+            <div class="btn-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="box-main-img-modal">
+                <img class="img-modal" src="img/cama1.jpg" alt="balon">
+            </div>
+            <div class="info-modal"><span>
+              Leadtimes Base de cama de terciopelo gris con plataforma tapizada con botones copetudos, cabecero duradero y lujoso, tamaño California King</span></div>
+       <div class="divs">
+        <div class="divMiniaturas "><img class="balon" src="./img/cama1.jpg" alt=""></div>
+        <div class="divMiniaturas "><img class="balon" src="./img/cama2.jpg" alt=""></div>
+        <div class="divMiniaturas "><img class="balon" src="./img/cama3.jpg" alt=""></div>
+        <div class="divMiniaturas "><img class="balon" src="./img/cama4.jpg" alt=""></div>
+        <div class="divMiniaturas "><img class="balon" src="./img/cama5.jpg" alt=""></div>
+    </div>  
+    <!-- este fue el modal -->
+    <script src="./js/amazon.js"></script>
 </body>
-
 </html>

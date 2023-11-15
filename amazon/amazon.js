@@ -1,4 +1,4 @@
-/* let headerSearchInput = document.getElementById("headerSearchInput");
+let headerSearchInput = document.getElementById("headerSearchInput");
 
 let mainContent = document.getElementById("main-content");
 
@@ -13,21 +13,7 @@ mainContent.addEventListener("click", () => {
 
     headerSearchInput.classList.add("header-search-input-no-focus");
     headerSearchInput.classList.remove("header-search-input-focus");
-}); */
-
-//divs body 
-const divBody = document.querySelectorAll('.divbody');
-const oriImage = document.getElementById('original-image');
-
-divBody.forEach(divBody => {
-    const imagen = divBody.querySelector('img');
-    imagen.addEventListener('mousemove', () => {
-        const src = imagen.getAttribute('src');
-        oriImage.setAttribute('src', src);
-    });
 });
-
-
 
 //Boton de salir 
 const closeButton = document.querySelector('.btn-close');
@@ -53,9 +39,4 @@ miniDivs.forEach((miniDiv) => {
     mainImgDiv.querySelector('img').src = img.src;
   });
 });
-//lupa del producto
-
-
-
-
 

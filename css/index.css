@@ -1,12 +1,8 @@
 
-*{
-    border: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
-}
 body {
-    background-color: #5DADE2;
+    background: #a4ddf8;
     font-family: "Poppins", sans-serif;
+    color: white;
   }
 
 
@@ -16,17 +12,27 @@ body {
     margin: 3em;
 }
 .box2{
-   list-style: none; /*Para quitar el boton de inicio en los link*/
-   display: inline-block; /*  */
-   padding: 10px 20px; /* tamaño de la margen del boton */
+    display: inline-block; /*  */
    font-size: 14px; /*Se establece el tamaño de la fuente*/
    cursor: pointer; /*  */
    text-align: center; /*  */
-   text-decoration: none; /*  */
    outline: none; /*  */
-   border: 2px solid #154360; /*Se le hace un color de borde dependiendo de los siguientes datos, ej {2px solid red) se utilizaria sin las comillas*/
-   background-color: #154360;
     border-radius: 15px;/*Cambia las esquinas rodondeandolo*/
    margin-right: 15px; /*separar los botones*/
-    margin: 20px
+  
+}
+a{
+    color: white;
+}
+.box2 {
+    background: linear-gradient(45deg, #85a2ff, #5c8dff);
+    margin: 15px;
+    padding: 22px;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+
 }
